@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {display: flex; justify-content: space-between;
+   margin-left:100px ;margin-right: 100px;}
+.current-condition {display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   background-color: aquamarine;
+}   
+.t {grid-column: span 2;}
+.input-group {grid-column: 9/12;}
+#temp-value {
+    font-size: 5rem;
+}
+@media (max-width:650px){
+    .current-condition {display: flex;flex-direction: column; }
+}
